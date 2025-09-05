@@ -1,0 +1,22 @@
+name: frn50k
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pytorch
+  - pytorch-cuda=12.1  # remove if CPU-only
+  - pip
+  - pip:
+      - pytorch-lightning==2.4.0
+      - torchmetrics==1.4.0
+      - pandas==2.2.2
+      - polars==1.5.0
+      - numpy
+      - pyarrow
+      - matplotlib
+      - scikit-learn
+      - datasets==3.0.2
+      - darts==0.30.0
+      - optuna==3.6.1
+      - wandb==0.17.7
